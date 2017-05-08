@@ -15,6 +15,9 @@
 		460C263B1EC0409B00841398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460C26391EC0409B00841398 /* LaunchScreen.storyboard */; };
 		460C26461EC0409B00841398 /* SiftyJsonDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C26451EC0409B00841398 /* SiftyJsonDemoTests.swift */; };
 		460C26511EC0409B00841398 /* SiftyJsonDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C26501EC0409B00841398 /* SiftyJsonDemoUITests.swift */; };
+		460C26611EC041C600841398 /* NRHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C265E1EC041C600841398 /* NRHTTPRequest.swift */; };
+		460C26621EC041C600841398 /* NRHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C265F1EC041C600841398 /* NRHTTPResponse.swift */; };
+		460C26631EC041C600841398 /* NRNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C26601EC041C600841398 /* NRNetworkManager.swift */; };
 		9CB20A38AF3312138EF67AAB /* Pods_SiftyJsonDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148727490B953DDB0C7EA783 /* Pods_SiftyJsonDemoTests.framework */; };
 		B1AA9ADBDFC1BFBAE0E8D489 /* Pods_SiftyJsonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF3B9FCBC06431A46367AE6 /* Pods_SiftyJsonDemo.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		460C264C1EC0409B00841398 /* SiftyJsonDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiftyJsonDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		460C26501EC0409B00841398 /* SiftyJsonDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiftyJsonDemoUITests.swift; sourceTree = "<group>"; };
 		460C26521EC0409B00841398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460C265E1EC041C600841398 /* NRHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHTTPRequest.swift; sourceTree = "<group>"; };
+		460C265F1EC041C600841398 /* NRHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHTTPResponse.swift; sourceTree = "<group>"; };
+		460C26601EC041C600841398 /* NRNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkManager.swift; sourceTree = "<group>"; };
 		AD294468D2F8D9F791397AD6 /* Pods_SiftyJsonDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiftyJsonDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF3B9FCBC06431A46367AE6 /* Pods_SiftyJsonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiftyJsonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A0AAFC90150C68E1539B76 /* Pods-SiftyJsonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiftyJsonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiftyJsonDemo/Pods-SiftyJsonDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 		460C262F1EC0409B00841398 /* SiftyJsonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				460C265E1EC041C600841398 /* NRHTTPRequest.swift */,
+				460C265F1EC041C600841398 /* NRHTTPResponse.swift */,
+				460C26601EC041C600841398 /* NRNetworkManager.swift */,
 				460C26301EC0409B00841398 /* AppDelegate.swift */,
 				460C26321EC0409B00841398 /* ViewController.swift */,
 				460C26341EC0409B00841398 /* Main.storyboard */,
@@ -448,6 +457,9 @@
 			files = (
 				460C26331EC0409B00841398 /* ViewController.swift in Sources */,
 				460C26311EC0409B00841398 /* AppDelegate.swift in Sources */,
+				460C26631EC041C600841398 /* NRNetworkManager.swift in Sources */,
+				460C26621EC041C600841398 /* NRHTTPResponse.swift in Sources */,
+				460C26611EC041C600841398 /* NRHTTPRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +712,7 @@
 				460C26571EC0409B00841398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		460C26581EC0409B00841398 /* Build configuration list for PBXNativeTarget "SiftyJsonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +721,7 @@
 				460C265A1EC0409B00841398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		460C265B1EC0409B00841398 /* Build configuration list for PBXNativeTarget "SiftyJsonDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +730,7 @@
 				460C265D1EC0409B00841398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
