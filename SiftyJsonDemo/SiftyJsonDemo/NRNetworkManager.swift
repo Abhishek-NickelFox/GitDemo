@@ -25,6 +25,8 @@ class NRNetworkManager: NSObject {
     public var articles : NSArray?
     public var sources : NSArray?
     
+    public var sourcesList : [Any]?
+    
     public var articleArray : NSMutableArray?
     public var sourceArray : NSMutableArray?
     
@@ -51,13 +53,13 @@ class NRNetworkManager: NSObject {
                 
                 self.articles = NSArray(array: dictionary["articles"] as! NSArray)
                 
-                for articleDict in self.articles as! [[String:Any]] {
-                    
-//                    let article = NRArticle(dictionary: articleDict)
-//                    self.articleArray?.add(article)
-                    
-    //                print("ARTICLE \n \(article.description)")
-                    }
+//                for articleDict in self.articles as! [[String:Any]] {
+//                    
+////                    let article = NRArticle(dictionary: articleDict)
+////                    self.articleArray?.add(article)
+//                    
+//    //                print("ARTICLE \n \(article.description)")
+//                }
             }
             completion(self.articleArray!, error)
         })
@@ -81,14 +83,14 @@ class NRNetworkManager: NSObject {
                 let dictionary : [String:Any] = json as! [String : Any]
                 
                 self.status = dictionary["status"]! as? NSString
-                
                 self.sources = NSArray(array: dictionary["sources"] as! NSArray)
+
                 for sourcesDict in self.sources as! [[String:Any]] {
                     
-//                    let sourceOb = NRSource(dictionary: sourcesDict)
-//                    self.sourceArray?.add(sourceOb)
+                    let sourceOb = NRSource(dictionary: sourcesDict)
+                    self.sourceArray?.add(sourceOb)
                     
-    //                print("SOURCE \n \(sourceOb.description)")
+                    print("SOURCE \n \(sourceOb.description)")
                 }
             }
             completion(self.sourceArray!, error)

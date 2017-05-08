@@ -22,7 +22,7 @@ class NRHTTPResponse: NSObject {
             
             var jsonResponse: Any? = nil
             if (error != nil) {
-                print("ERROR RESPONSE (IF-ANY) :: \(error?.localizedDescription)")
+                print("ERROR RESPONSE (IF-ANY) :: \(String(describing: error?.localizedDescription))")
                 completion(jsonResponse as Any, error as NSError?)
             }
             else
@@ -32,7 +32,8 @@ class NRHTTPResponse: NSObject {
                 if (httpResponse.statusCode == RESPONSE_CODE.SUCCESS.rawValue) {
                     
                     do {
-                        jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+//                        jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                         jsonResponse = try JSONManager.getJSONDictionary(responseData: data!)
                     }
                     catch let err as NSError
                     {
@@ -40,7 +41,7 @@ class NRHTTPResponse: NSObject {
                     }
                     completion(jsonResponse as Any, error as NSError?)
                     }
-                    print("ERROR RESPONSE DATA (IF-ANY) :: \(jsonResponse)")
+                    print("ERROR RESPONSE DATA (IF-ANY) :: \(String(describing: jsonResponse))")
             }
         }
         task.resume()

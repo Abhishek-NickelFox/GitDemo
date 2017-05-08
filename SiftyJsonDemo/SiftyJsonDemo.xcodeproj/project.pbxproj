@@ -18,6 +18,8 @@
 		460C26611EC041C600841398 /* NRHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C265E1EC041C600841398 /* NRHTTPRequest.swift */; };
 		460C26621EC041C600841398 /* NRHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C265F1EC041C600841398 /* NRHTTPResponse.swift */; };
 		460C26631EC041C600841398 /* NRNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C26601EC041C600841398 /* NRNetworkManager.swift */; };
+		460C26651EC046C900841398 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C26641EC046C900841398 /* JSONManager.swift */; };
+		460C26671EC0493D00841398 /* NRSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C26661EC0493D00841398 /* NRSource.swift */; };
 		9CB20A38AF3312138EF67AAB /* Pods_SiftyJsonDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148727490B953DDB0C7EA783 /* Pods_SiftyJsonDemoTests.framework */; };
 		B1AA9ADBDFC1BFBAE0E8D489 /* Pods_SiftyJsonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF3B9FCBC06431A46367AE6 /* Pods_SiftyJsonDemo.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		460C265E1EC041C600841398 /* NRHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHTTPRequest.swift; sourceTree = "<group>"; };
 		460C265F1EC041C600841398 /* NRHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHTTPResponse.swift; sourceTree = "<group>"; };
 		460C26601EC041C600841398 /* NRNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkManager.swift; sourceTree = "<group>"; };
+		460C26641EC046C900841398 /* JSONManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		460C26661EC0493D00841398 /* NRSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRSource.swift; sourceTree = "<group>"; };
 		AD294468D2F8D9F791397AD6 /* Pods_SiftyJsonDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiftyJsonDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF3B9FCBC06431A46367AE6 /* Pods_SiftyJsonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiftyJsonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A0AAFC90150C68E1539B76 /* Pods-SiftyJsonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiftyJsonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiftyJsonDemo/Pods-SiftyJsonDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		460C262F1EC0409B00841398 /* SiftyJsonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				460C26661EC0493D00841398 /* NRSource.swift */,
 				460C265E1EC041C600841398 /* NRHTTPRequest.swift */,
 				460C265F1EC041C600841398 /* NRHTTPResponse.swift */,
 				460C26601EC041C600841398 /* NRNetworkManager.swift */,
@@ -152,6 +157,7 @@
 				460C26371EC0409B00841398 /* Assets.xcassets */,
 				460C26391EC0409B00841398 /* LaunchScreen.storyboard */,
 				460C263C1EC0409B00841398 /* Info.plist */,
+				460C26641EC046C900841398 /* JSONManager.swift */,
 			);
 			path = SiftyJsonDemo;
 			sourceTree = "<group>";
@@ -456,8 +462,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				460C26331EC0409B00841398 /* ViewController.swift in Sources */,
+				460C26651EC046C900841398 /* JSONManager.swift in Sources */,
 				460C26311EC0409B00841398 /* AppDelegate.swift in Sources */,
 				460C26631EC041C600841398 /* NRNetworkManager.swift in Sources */,
+				460C26671EC0493D00841398 /* NRSource.swift in Sources */,
 				460C26621EC041C600841398 /* NRHTTPResponse.swift in Sources */,
 				460C26611EC041C600841398 /* NRHTTPRequest.swift in Sources */,
 			);
