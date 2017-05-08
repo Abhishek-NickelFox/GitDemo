@@ -1,0 +1,6 @@
+framework module Pods_SiftyJsonDemoTests {
+  umbrella header "Pods-SiftyJsonDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,21 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'SiftyJsonDemo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
+
+  # Pods for SiftyJsonDemo
+  pod 'SwiftyJSON'
+
+  target 'SiftyJsonDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SiftyJsonDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
